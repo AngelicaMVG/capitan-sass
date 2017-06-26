@@ -1,0 +1,42 @@
+@import "grid";
+
+$background-yellow: #EBB85D;
+$backgroud-grey: #3E3F40;
+$text-light: #fff;
+$text-dark: #000;
+$font: helvetica, arial;
+
+body , html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#header {
+  background: $background-yellow;
+  color: $text-light;
+  height: 100px;
+  display: flex;
+  align-items:center;
+}
+
+ul {
+  color: $text-light;
+  width: 100%;
+  padding: 1%;
+
+  li {
+    list-style: none;
+    background: $backgroud-grey;
+    margin-top: 1%;
+    padding: 1%;
+    &:hover {
+      background: $background-yellow;
+    }
+  }
+}
+
+.aside {
+  background: $backgroud-grey;
+  color: $text-light;
+}
