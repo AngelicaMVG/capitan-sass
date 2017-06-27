@@ -6,3 +6,9 @@ $font: helvetica, arial;
 $container-padd: 5%;
 $subtitle-size: 1.5em;
 $text-size: .8em;
+
+
+
+@function col($n) {
+  @return  100% * $n/12;
+}

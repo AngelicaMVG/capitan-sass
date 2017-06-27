@@ -105,6 +105,12 @@ ul {
     #asistencia li:hover {
       color: #EBB85D; }
 
+.l3 {
+  width: 25%; }
+
+.l6 {
+  width: 50%; }
+
 .aside {
   background: #3E3F40;
   color: #fff;
