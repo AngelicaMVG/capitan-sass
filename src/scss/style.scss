@@ -2,7 +2,8 @@
 @import "variables";
 @import "mixin";
 
-body , html {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -14,15 +15,12 @@ body , html {
   color: $text-light;
   height: 100px;
   display: flex;
-  align-items:center;
+  align-items: center;
 
   h1 {
     margin-left: 5%;
   }
-
 }
-
-
 
 ul {
   color: $text-light;
@@ -34,6 +32,7 @@ ul {
     background: $backgroud-grey;
     margin-top: 4%;
     padding: 2%;
+
     &:hover {
       background: $background-yellow;
     }
@@ -45,10 +44,12 @@ ul {
     text-align: left;
     margin-bottom: 5%;
   }
-  p{
+
+  p {
     text-align: left;
     line-height: 1.2;
   }
+
   h4 {
     margin-top: 5%;
     text-align: left;
@@ -58,48 +59,44 @@ ul {
 #asistencia {
   margin-top: 5%;
 
-  li{
+  li {
     @include asistencia;
   }
 }
 
+.l3 {
+  width: col(3);
+}
 
-  .l3 {
-    width: col(3)
-  }
-  .l6 {
-    width: col(6);
-  }
-
-
+.l6 {
+  width: col(6);
+}
 
 .aside {
   background: $backgroud-grey;
   color: $text-light;
   padding: $container-padd;
 
-  h2{
+  h2 {
     font-size: $subtitle-size;
   }
+
   p {
     font-size: $text-size;
     padding: $container-padd;
   }
 }
 
-
 footer {
-    font-size: .8em;
-    background: $backgroud-grey;
-    height: 70px;
-    color: $text-light;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  font-size: 0.8em;
+  background: $backgroud-grey;
+  height: 70px;
+  color: $text-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
   .col-3 {
     width: 33.3333%;
   }
@@ -111,14 +108,10 @@ footer {
   #aside {
     width: 100%;
   }
-
-
 }
-
 @media only screen and ( max-width: 480px ) {
-
-  .col-3 , .col-6 {
+  .col-3,
+  .col-6 {
     width: 100%;
   }
-
 }
