@@ -1,15 +1,11 @@
 @import "grid";
-
-$background-yellow: #EBB85D;
-$backgroud-grey: #3E3F40;
-$text-light: #fff;
-$text-dark: #000;
-$font: helvetica, arial;
+@import "variables";
 
 body , html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: $font;
 }
 
 #header {
@@ -18,6 +14,11 @@ body , html {
   height: 100px;
   display: flex;
   align-items:center;
+
+  h1 {
+    margin-left: 5%;
+  }
+
 }
 
 ul {
@@ -28,15 +29,78 @@ ul {
   li {
     list-style: none;
     background: $backgroud-grey;
-    margin-top: 1%;
-    padding: 1%;
+    margin-top: 4%;
+    padding: 2%;
     &:hover {
       background: $background-yellow;
     }
   }
 }
 
+.ejercicio {
+
+  h1 {
+    text-align: left;
+    margin-bottom: 5%;
+  }
+  p{
+    text-align: left;
+    line-height: 1.2;
+  }
+  h4 {
+    margin-top: 5%;
+    text-align: left;
+  }
+
+
+}
+
 .aside {
   background: $backgroud-grey;
   color: $text-light;
+  padding: $container-padd;
+
+  h2{
+    font-size: $subtitle-size;
+  }
+  p {
+    font-size: $text-size;
+    padding: $container-padd;
+  }
+}
+
+
+footer {
+    font-size: .8em;
+    background: $backgroud-grey;
+    height: 70px;
+    color: $text-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 1024px){
+  .col-3 {
+    width: 33.3333%;
+  }
+
+  .col-6 {
+    width: 66.6666%;
+  }
+
+  #aside {
+    width: 100%;
+  }
+
+
+}
+
+@media only screen and ( max-width: 480px ) {
+
+  .col-3 , .col-6 {
+    width: 100%;
+  }
+
 }

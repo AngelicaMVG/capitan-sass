@@ -61,7 +61,8 @@
 body, html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: helvetica, arial; }
 
 #header {
   background: #EBB85D;
@@ -69,6 +70,8 @@ body, html {
   height: 100px;
   display: flex;
   align-items: center; }
+  #header h1 {
+    margin-left: 5%; }
 
 ul {
   color: #fff;
@@ -77,13 +80,51 @@ ul {
   ul li {
     list-style: none;
     background: #3E3F40;
-    margin-top: 1%;
-    padding: 1%; }
+    margin-top: 4%;
+    padding: 2%; }
     ul li:hover {
       background: #EBB85D; }
 
+.ejercicio h1 {
+  text-align: left;
+  margin-bottom: 5%; }
+.ejercicio p {
+  text-align: left;
+  line-height: 1.2; }
+.ejercicio h4 {
+  margin-top: 5%;
+  text-align: left; }
+
 .aside {
   background: #3E3F40;
-  color: #fff; }
+  color: #fff;
+  padding: 5%; }
+  .aside h2 {
+    font-size: 1.5em; }
+  .aside p {
+    font-size: 0.8em;
+    padding: 5%; }
+
+footer {
+  font-size: .8em;
+  background: #3E3F40;
+  height: 70px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+@media only screen and (max-width: 1024px) {
+  .col-3 {
+    width: 33.3333%; }
+
+  .col-6 {
+    width: 66.6666%; }
+
+  #aside {
+    width: 100%; } }
+@media only screen and (max-width: 480px) {
+  .col-3, .col-6 {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
