@@ -1,4 +1,4 @@
-$(document).ready(cargarPagina);
+
 
 
 var api = {
@@ -6,7 +6,6 @@ var api = {
 };
 
 var plantillaFinal = '';
-var arregloAlumnas = [];
 
 var cargarPagina = function() {
   cargarLista();
@@ -14,7 +13,6 @@ var cargarPagina = function() {
 
 var cargarLista = function() {
   $.getJSON(api.url, function(alumnas) {
-    arregloAlumnas = alumnas;
     alumnas.forEach(mostrarAlumnas);
   });
 };
@@ -33,4 +31,12 @@ var mostrarAlumnas = function(alumna) {
 
 
 var plantilla=
-  "<li> __nombre__ , __mLastName__ , __pLastName__ <input type='checkbox'> </li>";
+  "<li>" +
+   "<input type='checkbox'> " +
+   "__nombre__ " +
+   "__mLastName__ " +
+   "__pLastName__  "  +
+   "</li>";
+
+
+$(document).ready(cargarPagina);

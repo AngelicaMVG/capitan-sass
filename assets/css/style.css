@@ -95,6 +95,16 @@ ul {
   margin-top: 5%;
   text-align: left; }
 
+#asistencia {
+  margin-top: 5%; }
+  #asistencia li {
+    margin-left: 5%;
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.5; }
+    #asistencia li:hover {
+      color: #EBB85D; }
+
 .aside {
   background: #3E3F40;
   color: #fff;

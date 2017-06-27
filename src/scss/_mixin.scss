@@ -1,0 +1,9 @@
+@mixin asistencia (){
+  margin-left: 5%;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.5;
+  &:hover {
+    color: $background-yellow;
+  }
+}
